@@ -17,12 +17,11 @@ Before you begin, ensure you have the following installed:
 - **Git**
 
 Verify installations:
+---
 
-```bash
 node --version   # >=16.x
 npm --version    # >=8.x
 git --version
-
 
 ## Installation & Run
 
