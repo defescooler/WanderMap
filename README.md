@@ -24,27 +24,27 @@ npm --version    # >=8.x
 git --version
 
 
-Installation & Run
+## Installation & Run
 
-1. Clone the repo
+# 1. Clone the repo
 
 git clone https://github.com/defescooler/WanderMap.git
 cd WanderMap
 
-2. Configure the backend
+# 2. Configure the backend
 
 cd server
 cp .env.example .env
 Open server/.env and replace the placeholder:
 
-3. MAPBOX_TOKEN=pk.*************************************
+# 3. MAPBOX_TOKEN=pk.*************************************
 PORT=4000
 with your actual Mapbox token from https://account.mapbox.com/.
 
-4. Install backend dependencies
+# 4. Install backend dependencies
 npm install
 
-5. Start the backend server
+# 5. Start the backend server
 npm run dev
 
 You should see:
