@@ -34,9 +34,10 @@ cd WanderMap
 
 cd server
 cp .env.example .env
-Open server/.env and replace the placeholder:
 
-# 3. MAPBOX_TOKEN=pk.*************************************
+# 3. Open server/.env and replace the placeholder:
+
+MAPBOX_TOKEN=pk.*************************************
 PORT=4000
 with your actual Mapbox token from https://account.mapbox.com/.
 
