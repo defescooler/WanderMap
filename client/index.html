@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderMap - Track Your Travels</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="title-container">
+      <h1>WanderMap</h1>
+      <p class="subtitle">Welcome, <span id="nick">traveler</span>!</p>
+    </div>
+  </header>
+  
+  <main>
+    <div id="map"></div>
+    <div id="feed">
+      <h2>Your Travel Feed</h2>
+      <ul id="tripList"></ul>
+    </div>
+  </main>
+
+  <dialog id="tripModal">
+    <h3 id="modalTitle">Add Trip</h3>
+    <form id="tripForm">
+      <div>
+        <label for="placeInput">Place:</label>
+        <input type="text" id="placeInput" required>
+        <ul id="suggestions"></ul>
+      </div>
+      <div>
+        <label for="dateInput">Date:</label>
+        <input type="date" id="dateInput" required>
+      </div>
+      <div>
+        <label for="noteInput">Notes:</label>
+        <textarea id="noteInput" rows="3"></textarea>
+      </div>
+      <input type="hidden" id="latInput">
+      <input type="hidden" id="lngInput">
+      <div class="form-actions">
+        <button type="button" id="cancelBtn">Cancel</button>
+        <button type="submit">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
