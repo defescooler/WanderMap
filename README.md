@@ -6,8 +6,7 @@ A lightweight full‑stack app for logging your trips on an interactive world ma
 
 ## Live demo
 
-////
-
+https://youtu.be/LlmEwdIJOAQ
 ---
 
 ## Prerequisites
